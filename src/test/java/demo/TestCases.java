@@ -76,12 +76,12 @@ public class TestCases extends ExcelDataProvider { // Lets us read the data
                 wrap.clk(about);
                 wait.until(ExpectedConditions.urlContains("about"));
 
-                WebElement about_text=driver.findElement(By.xpath("//section[@class='ytabout__content']/h1"));
+                WebElement about_text = driver.findElement(By.xpath("//section[@class='ytabout__content']/h1"));
                 WebElement content1 = driver.findElement(By.xpath("//section[@class='ytabout__content']/p[1]"));
                 WebElement content2 = driver.findElement(By.xpath("//section[@class='ytabout__content']/p[2]"));
                 wrap.moveToEle(about_text, driver);
                 Thread.sleep(2000);
-                System.out.println(about_text+"\n"+content1.getText() + " " + content2.getText());
+                System.out.println(about_text.getText() + "\n" + content1.getText() + " " + content2.getText());
 
         }
 
